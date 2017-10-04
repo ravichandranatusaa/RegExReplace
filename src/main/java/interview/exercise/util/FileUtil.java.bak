@@ -61,17 +61,6 @@ public class FileUtil {
 		return false;
 	}
 
-	/**
-	 * 
-	 * @param list
-	 * @param file
-	 * @param replaceCount
-	 * @return
-	 * @throws IOException
-	 * 
-	 * private method to get the list of files in collection
-	 * 
-	 */
 	private FileEntry addFileEntry(List<FileEntry> list, File file, int replaceCount) throws IOException {
 		FileEntry obj = null;
 
@@ -86,15 +75,6 @@ public class FileUtil {
 		return obj;
 	}
 
-	
-	/**
-	 * 
-	 * @param startingPath
-	 * @param allFiles
-	 * @return
-	 * 
-	 * Provides list of all files given in directory/file path
-	 */
 	private List<File> getAllFiles(String startingPath, List<File> allFiles) {
 
 		if(allFiles==null) allFiles = new ArrayList<File>();
@@ -121,18 +101,6 @@ public class FileUtil {
 	}
 
 
-	/**
-	 * 
-	 * @param startingPath
-	 * @param regexPattern
-	 * @param replacement
-	 * @param fileAcceptPattern
-	 * @return List<FileEntry>
-	 * @throws Exception
-	 * 
-	 * It is service/Util class for file regex processing 
-	 * 
-	 */
 	public List<FileEntry> processFileSearch(String startingPath, String regexPattern,
 			String replacement, String fileAcceptPattern) throws Exception {
 		List<FileEntry> retList = new ArrayList<FileEntry>();

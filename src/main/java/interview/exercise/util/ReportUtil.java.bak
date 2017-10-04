@@ -21,13 +21,6 @@ private static ReportUtil obj = null;
 		return obj;
 	}
 	
-	
-	/**
-	 * 
-	 * @param List<FileEntry>
-	 * 
-	 * Print method for Replaced files (reporting)
-	 */
 	public void printReport(List<FileEntry> list) {
 		if(list!=null && !list.isEmpty()) {
 			FileEntry obj = null;

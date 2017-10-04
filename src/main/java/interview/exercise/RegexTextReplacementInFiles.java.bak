@@ -7,26 +7,12 @@ import interview.exercise.util.ReportUtil;
 
 public class RegexTextReplacementInFiles {
 
-	
-	/**
-	 * 
-	 * @param startingPath
-	 * @param regexPattern
-	 * @param replacement
-	 * @param fileAcceptPattern
-	 * @return List<FileEntry> collection of File Entries which got replaced
-	 * 
-	 * 
-	 * Starting point for regex replacement of files
-	 * 
-	 */
 	public List<FileEntry> process(String startingPath, String regexPattern,
 			String replacement, String fileAcceptPattern) {
 
 		try {
 			return FileUtil.getInstance().processFileSearch(startingPath, regexPattern, replacement, fileAcceptPattern);
 		}catch(Exception e) {
-			//Handle Exception here
 			System.out.println(e.getLocalizedMessage());
 			return null;
 		}

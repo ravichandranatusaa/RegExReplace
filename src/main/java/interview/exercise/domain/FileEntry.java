@@ -13,7 +13,6 @@ public class FileEntry {
 	private String fileName;
 	private String fullPath;
 	private int replaceCount;
-	private String status;
 	
 	public String getFileName() {
 		return fileName;
@@ -33,10 +32,4 @@ public class FileEntry {
 	public void setReplaceCount(int replaceCount) {
 		this.replaceCount = replaceCount;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}	
 }
