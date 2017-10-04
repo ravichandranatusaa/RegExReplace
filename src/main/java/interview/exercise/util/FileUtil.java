@@ -1,5 +1,16 @@
 package interview.exercise.util;
 
+import java.io.File;
+import java.util.regex.PatternSyntaxException;
+
+/**
+ * 
+ * @author Ravichandran Gopinath
+ *
+ * Utility/Service class for File operations
+ *
+ */
+
 public class FileUtil {
 
 	private static FileUtil obj = null;
@@ -17,8 +28,16 @@ public class FileUtil {
 		return obj;
 	}
 	
-	public boolean isDirectory() {
+	private boolean isValidFile(File file) {
 		return false;
+	}
+	
+	public Map<String, FileEntry> processFileSearch(String startingPath) {
+		try {
+			
+		} catch(PatternSyntaxException exception) {
+			
+		}
 	}
 	
 }

@@ -14,6 +14,36 @@ public class FileEntry {
 	private String fullPath;
 	private String extension;
 	private int replaceCount;
+	private String status;
 	
-	
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	public String getFullPath() {
+		return fullPath;
+	}
+	public void setFullPath(String fullPath) {
+		this.fullPath = fullPath;
+	}
+	public String getExtension() {
+		return extension;
+	}
+	public void setExtension(String extension) {
+		this.extension = extension;
+	}
+	public int getReplaceCount() {
+		return replaceCount;
+	}
+	public void setReplaceCount(int replaceCount) {
+		this.replaceCount = replaceCount;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}	
 }
