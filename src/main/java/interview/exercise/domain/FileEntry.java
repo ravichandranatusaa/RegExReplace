@@ -12,7 +12,6 @@ public class FileEntry {
 
 	private String fileName;
 	private String fullPath;
-	private String extension;
 	private int replaceCount;
 	private String status;
 	
@@ -27,12 +26,6 @@ public class FileEntry {
 	}
 	public void setFullPath(String fullPath) {
 		this.fullPath = fullPath;
-	}
-	public String getExtension() {
-		return extension;
-	}
-	public void setExtension(String extension) {
-		this.extension = extension;
 	}
 	public int getReplaceCount() {
 		return replaceCount;
